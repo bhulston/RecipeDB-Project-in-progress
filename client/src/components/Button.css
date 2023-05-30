@@ -1,0 +1,123 @@
+:root {
+    --primary: #ffffff;
+    --secondary: #dadada;
+    --blue1: #18A0FB;
+    --blue2: #C1E2F0;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary{
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.btn--outline{
+    background-color: transparent;
+    color: #dadada;
+    padding: 8px 20px;
+    border: 1px solid #dadada;
+    transition: all 0.3s ease-in-out;
+    margin-right: 18px;
+    font-size:2.8vh;
+    white-space: nowrap;
+}
+
+.btn--body{
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    width: 130px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;
+    color: #18A0FB;
+    font-family: 'Montserrat', sans-serif;
+    /* white-space: nowrap; */
+    font-style: normal;
+    /* font-weight: 500; */
+    font-size: 2.5vh;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    overflow: hidden;
+    /* margin-top: 10px; */
+    cursor: pointer;
+}
+
+.btn--search{
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    width: 20vw;
+    height: 40px;
+    background: #18A0FB;
+    border: 1px solid #18A0FB;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5vh;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    text-align: center;
+    /* margin-top: 10px; */
+    cursor: pointer;
+    top: 50vw;
+}
+
+.btn-medium {
+    padding: 8px 20px;
+    font-size: 1.2rem;
+}
+
+.btn--large {
+    padding: 12px 26px;
+    font-size: 1.4rem;
+}
+
+.btn--primary:hover, 
+.btn--search:hover,
+.btn--outline:hover {
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+}
+
+.btn--body:hover {
+    transition: all 0.3s ease-in-out;
+    background: var(--blue1);
+    color: var(--primary);
+    transition: 250ms;
+}
+
+@media screen and (max-width: 800px) {
+    .btn--body {
+        font-size: 2vw;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .btn--body {
+        font-size: 1.5vw;
+        text-align: left;
+        padding-left: 10px;
+    }
+}
+
+
+
+
+

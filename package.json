@@ -1,0 +1,32 @@
+{
+  "name": "mern-recipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "chalk": "^5.2.0",
+    "concurrently": "^8.0.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.1.1",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.5",
+    "@babel/core": "^7.21.8",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.21.5",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/register": "^7.21.0",
+    "nodemon": "^2.0.22",
+    "webpack": "^5.83.1",
+    "webpack-dev-middleware": "^6.1.1",
+    "webpack-hot-middleware": "^2.25.3"
+  }
+}

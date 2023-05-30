@@ -1,0 +1,95 @@
+/* Signup.css */
+.signup-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    left: 0;
+    top:10vh;
+    background: #FFFFFF;
+    padding-bottom: 100vh;
+
+}
+
+.main-signup-title {
+    position: relative;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    text-align: match-parent;
+    color: #000000;
+    left: 43%;
+    top: 15vh;
+}
+
+.signup-form {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 25%;
+    left:25%;
+    background: #FFFFFF;
+    /* padding:100px; */
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.signup-title {
+    position: relative;
+    height: 0%;
+    top: 10%;
+    left: 12%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #000000;
+}
+
+.signup-input-field {
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    left: 10%;
+    top: 30%;
+    background: #FFFFFF;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.signup-input-field:nth-child(2) {
+    top: 45%; /* Adjust the value to create desired spacing */
+}
+
+.signup-input-field:nth-child(3) {
+    top: 60%; /* Adjust the value to create desired spacing */
+}
+
+.signup-input-field input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.signup-buttons {
+    position: relative;
+    top: 75%;
+    width: 30vh;
+    left: 55%;
+    transform: translateX(-50%);
+}
+
+.register {
+    top: 613px;
+}
+
+.sign-up {
+    top: 669px;
+}

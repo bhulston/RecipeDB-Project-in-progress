@@ -1,0 +1,64 @@
+.footer {
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+    height: 16%;
+    left: 0px;
+    /* top: 1848px; */
+    background: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    color: #1c1c1c;
+    padding-top: 20px;
+    /* margin-top: 0px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    /* z-index: -1; */
+  }
+  
+  .separator{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0%;
+    top: 48%;
+    background: #1c1c1c;
+  }
+
+  .copyright {
+    position: absolute;
+    width: 301px;
+    /* height: 22%; */
+    left: 37.5%;
+    top: 55%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #1c1c1c;
+  }
+  
+  .sampleLogo {
+    position: absolute;
+    width: 264px;
+    height: 32px;
+    left: 637px;
+    top: 120px;
+  }
+  
+  .ellipse {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    left: 914px;
+    top: 273px;
+    background: #E5E5E5;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    box-sizing: border-box;
+  }
+  

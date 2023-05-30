@@ -1,0 +1,122 @@
+/* Signup.css */
+.search-container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 35vh;
+    left: 0;
+    top:0vh;
+    padding-bottom: 70vh;
+    object-fit: contain;
+}
+
+img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+}
+
+
+
+.search-form {
+    position: absolute;
+    width: 50%;
+    height: 60%;
+    top: 20%;
+    left:25%;
+    background: #C1E2F0;
+    box-sizing: border-box;
+    border-radius: 4vh;
+    border: 1px solid #C1E2F0;
+}
+
+.search-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0%;
+    top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7vw;
+    line-height: 36px;
+    /* letter-spacing: -0.015em; */
+    color: #000000;
+}
+
+.search-input-field {
+    position: absolute;
+    width: 80%;
+    height: 2vw;
+    left: 10%;
+    top: 20%;
+    background: #FFFFFF;
+    border-radius: 100%;
+    /* border: 1px solid rgba(168, 10, 10, 0.5); */
+}
+
+.input-box {
+    border-color: transparent;
+    border-radius: 6px;
+}
+
+
+.search-input-field:nth-child(2) {
+    top: 33%; /* Adjust the value to create desired spacing */
+}
+
+.search-input-field input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3vw;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.search-dropdown-input-field {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 2vw;
+    left: 10%;
+    top: 45%;
+    background: #C1E2F0;
+    font-size: 2.2vh;
+    color:#18A0FB;
+    border-radius: 100%;
+    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+}
+
+.search-dropdown-input-field:nth-child(2) {
+    left: 39.1%;
+}
+
+.search-dropdown-input-field:nth-child(3) {
+    left: 69%;
+}
+
+.search-dropdown-input-field input {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.2vh;
+    line-height: 24px;
+    color: rgba(19, 19, 19, 0.8);
+    width: 100%;
+}
+
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(800%);
+}
+
+
