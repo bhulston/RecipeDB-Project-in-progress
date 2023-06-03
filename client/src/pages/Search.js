@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../App.css';
-import SearchRecipe from '../components/SearchRecipe';
-import RecipeDisplay from '../components/RecipeDisplay';
+import SearchRecipe from '../sections/SearchRecipe';
+import RecipeDisplay from '../sections/RecipeDisplay';
 import Footer from '../components/Footer';
 
 

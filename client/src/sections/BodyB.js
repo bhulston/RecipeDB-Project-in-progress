@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import './BodyB.css';
-import { Button } from './Button';
+import { Button } from '../components/Button';
 import { UserContext } from '../App';
 
 const BodyB = () => {
@@ -10,7 +10,7 @@ const BodyB = () => {
   if (user) {
     return (
       <div className="bodyB">
-        <h1 className="header">Getting Started with HealthyRecipes</h1>
+        <h1 className="header">Getting Started</h1>
           <div className="grid">
           {/* First grid spot */}    
             <div>
@@ -60,7 +60,7 @@ const BodyB = () => {
 
   return (
     <div className="bodyB">
-      <h1 className="header">Getting Started with HealthyRecipes</h1>
+      <h1 className="header">Getting Started</h1>
         <div className="grid">
         {/* First grid spot */}    
           <div>

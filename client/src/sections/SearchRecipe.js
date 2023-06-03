@@ -1,7 +1,7 @@
 // Signup.js
 import React, {useState} from 'react';
 import './SearchRecipe.css';
-import { Button } from './Button';
+import { Button } from '../components/Button';
 import axios from 'axios';
 
 const SearchRecipe = ({setRecipes}) => {
@@ -52,17 +52,21 @@ const SearchRecipe = ({setRecipes}) => {
     
     return (
         <div className="search-container">
-          <img src = '/media/img_2.jpg'/>
+          {/* <img src = '/media/img_2.jpg'/> */}
             <div className="search-form">
-                <h2 className="search-title">Search by name, cuisine, ingredient or nutritional values</h2>
-                <div className="search-input-field">
-                    <input type="text" className = 'input-box' placeholder="Ingredients: black bean; cilantro" 
-                    value = {searchQuery1} onChange = {e => setSearchQuery1(e.target.value)}/>
-                </div>
-                <div className="search-input-field">
-                    <input className = 'input-box' type="text" placeholder="Search Term: Burrito, Korean, or Spicy Meatballs" 
-                    value = {searchQuery2} onChange = {e => setSearchQuery2(e.target.value)}/>
-                </div>
+                <h2 className="search-title">Search for Your Next Meal</h2>
+                <h3 className='input-title'>2. Add existing ingredients
+                    <div className="search-input-field">
+                        <input type="text" className = 'input-box' placeholder="black bean; cilantro" 
+                        value = {searchQuery1} onChange = {e => setSearchQuery1(e.target.value)}/>
+                    </div>
+                </h3>
+                <h3 className="input-title">1. What dish are you looking for?
+                    <div className="search-input-field">
+                        <input className = 'input-box' type="text" placeholder="Spicy Meatballs" 
+                        value = {searchQuery2} onChange = {e => setSearchQuery2(e.target.value)}/>
+                    </div>
+                </h3>   
                 <h3 className = "search-button">
                     <Button 
                         buttonStyle='btn--search'

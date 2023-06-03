@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../App.css';
-import HeroSection from '../components/HeroSection';
-import BodyB from '../components/BodyB';
+
+import RecipeDisplay from '../sections/RecipeDisplay';
+import Footer from '../components/Footer';
+import ChatSection from '../sections/ChatSection'
 
 function About () {
+    const [recipes, setRecipes] = useState([]); //initialize as empty array
+
     return (
         <>
-            <HeroSection /> 
-            <BodyB/>
+            <ChatSection setRecipes={setRecipes}/>
+            <RecipeDisplay recipes = {recipes}/>
+            <Footer/>
         </>
     )
 }

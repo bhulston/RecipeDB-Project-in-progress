@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Signup.css';
-import { Button } from './Button';
+import { Button } from '../components/Button';
 import { UserContext } from '../App';
 import { useNavigate } from 'react-router-dom';
 
@@ -42,8 +42,9 @@ const Signup = () => {
 
     return (
       <form onSubmit = {handleSubmit}>
+        <img src = '/media/img_2.jpg'/> 
         <div className="signup-container">
-            <h1 className="main-signup-title">Sign Up</h1>
+            {/* <h1 className="main-signup-title">Sign Up</h1> */}
             <div className="signup-form">
                 <h2 className="signup-title">Sign up for your HealthyRecipes account</h2>
                 <div className="signup-input-field">

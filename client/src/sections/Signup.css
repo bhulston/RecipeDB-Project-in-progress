@@ -1,16 +1,23 @@
-/* Login.css */
-.login-container {
+/* Signup.css */
+.signup-container {
     position: relative;
     display: flex;
     width: 100%;
-    height: 10vh;
+    height: 120vh;
     left: 0;
-    top:10vh;
-    background: #FFFFFF;
-    padding-bottom: 100vh;
+    bottom: 5vh;
 }
 
-.main-login-title {
+img {
+    object-fit: cover;
+    /* background-color: #ffffff; */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -2;
+}
+
+.main-signup-title {
     position: relative;
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -19,12 +26,13 @@
     font-size: 4vw;
     text-align: match-parent;
     color: #000000;
-    left: 45%;
+    left: 43%;
     top: 15vh;
 }
 
-.login-form {
+.signup-form {
     position: absolute;
+    border-radius: 2vh;
     width: 50%;
     height: 50%;
     top: 25%;
@@ -35,11 +43,11 @@
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.login-title {
+.signup-title {
     position: relative;
     height: 0%;
     top: 10%;
-    left: 15%;
+    left: 12%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -49,7 +57,7 @@
     color: #000000;
 }
 
-.login-input-field {
+.signup-input-field {
     position: absolute;
     width: 80%;
     height: 40px;
@@ -59,11 +67,15 @@
     /* border: 1px solid rgba(0, 0, 0, 0.5); */
 }
 
-.login-input-field:nth-child(2) {
+.signup-input-field:nth-child(2) {
     top: 45%; /* Adjust the value to create desired spacing */
 }
 
-.login-input-field input {
+.signup-input-field:nth-child(3) {
+    top: 60%; /* Adjust the value to create desired spacing */
+}
+
+.signup-input-field input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -73,11 +85,18 @@
     width: 100%;
 }
 
-.login-buttons {
+.signup-buttons {
     position: relative;
-    top: 60%;
+    top: 75%;
     width: 30vh;
     left: 55%;
     transform: translateX(-50%);
 }
 
+.register {
+    top: 613px;
+}
+
+.sign-up {
+    top: 669px;
+}

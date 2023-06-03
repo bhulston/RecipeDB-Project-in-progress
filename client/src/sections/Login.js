@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css';
-import { Button } from './Button';
+import { Button } from '../components/Button';
 import { UserContext } from '../App'; //global user variable
 import { useNavigate } from 'react-router-dom';
 
@@ -45,9 +45,10 @@ const Login = () => {
 
 
     return (
-      <form onSubmit = {handleLogin}>    
+      <form onSubmit = {handleLogin}>  
+      <img src = '/media/img_2.jpg'/>  
         <div className="login-container">
-            <h1 className="main-login-title">Log In</h1>
+            {/* <h1 className="main-login-title">Log In</h1> */}
             <div className="login-form">
                 <h2 className="login-title">Log In to your HealthyRecipes account</h2>
                 <div className="login-input-field">
@@ -58,7 +59,7 @@ const Login = () => {
                     <input type="text" placeholder="Email address" 
                     value = { email } onChange = {e => setEmail(e.target.value)}/>
                 </div>
-                <div className="login-buttons">
+                <div className="login-button">
                     <Button
                         type = 'submit'
                         className='btns'
@@ -66,6 +67,8 @@ const Login = () => {
                         buttonSize='btn--medium'
                         onClick={handleLogin}
                     >Log In</Button>
+                </div>
+                <div className="signup-button">
                     <Button
                         className='btns'
                         buttonStyle='btn--body'

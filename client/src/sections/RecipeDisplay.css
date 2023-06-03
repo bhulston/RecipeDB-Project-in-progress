@@ -1,0 +1,25 @@
+.recipesContainer {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.recipesContainer-empty {
+position: relative;
+/* width: 100%; */
+min-height: 20vh;
+max-height: 40vh;
+background: #FFFFFF;
+padding: 20px;
+/* box-sizing: border-box; */
+}
+
+.containerTitle {
+    font-size: 3vw;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    text-align: center;
+}

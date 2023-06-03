@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import RandomRecipe from './components/RecipeDisplay';
+// import RandomRecipe from './components/RecipeDisplay';
 import Navbar from './components/Navbar.js';
-import Button from './components/Button.js';
+// import Button from './components/Button.js';
 import Home from './pages/Home';
 import About from './pages/About';
 
 import './App.css';
-import BodyB from './components/BodyB';
+import BodyB from './sections/BodyB';
 import Footer from './components/Footer';
 import Log_in from './pages/Log-in';
 import Sign_up from './pages/Sign-up';
