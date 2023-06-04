@@ -84,7 +84,7 @@ const SearchRecipe = ({setRecipes}) => {
                             buttonStyle='btn--body'
                             buttonSize='btn--medium' 
                             onClick={() => setPIsOpen(!pIsOpen)}>
-                            {pIsOpen ? "Protein (g)" : "Protein (g)"} <i class="fa-solid fa-caret-down"></i>
+                            {pIsOpen ? "Protein(g)" : "Protein(g)"} <i class="fa-solid fa-caret-down"></i>
                         </Button>
                         {pIsOpen && (
                             <div style={{ marginTop: '10px' }}>
@@ -148,7 +148,7 @@ const SearchRecipe = ({setRecipes}) => {
                             buttonStyle='btn--body'
                             buttonSize='btn--medium' 
                             onClick={() => setFIsOpen(!fIsOpen)}>
-                            {fIsOpen ? "Fats (g)" : "Fats (g)"} <i class="fa-solid fa-caret-down"></i>
+                            {fIsOpen ? "Fats(g)" : "Fats(g)"} <i class="fa-solid fa-caret-down"></i>
                         </Button>
                           {fIsOpen && (
                             <div style={{ marginTop: '10px' }}>

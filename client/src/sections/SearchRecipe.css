@@ -41,7 +41,7 @@ img {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 1.9vw;
+    font-size: 3vh;
     /* line-height: 36px; */
     letter-spacing: -0.020em;
     color: #000000;
@@ -52,7 +52,7 @@ img {
     left: 7%;
     bottom: 7vh;
     padding-bottom: 15vh;
-    font-size: 2.3vh;
+    font-size: 2vh;
     color:rgba(19, 19, 19, 0.8);
 }
 
@@ -68,8 +68,9 @@ img {
     height: 2vw;
     left: 2%;
     top: 28%;
-    background: #FFFFFF;
-    border-radius: 100%;
+    background: transparent;
+    border-radius: 6px;
+    z-index: 1;
 }
 
 .input-box {
@@ -90,6 +91,7 @@ img {
     line-height: 24px;
     color: rgba(0, 0, 0, 0.8);
     width: 100%;
+    
 }
 
 .search-dropdown-input-field {
@@ -98,7 +100,7 @@ img {
     align-items: center;
     width: 20%;
     height: 2vw;
-    left: 9%;
+    left: 11%;
     top: 51%;
     background: #C1E2F0;
     font-size: 2vh;
@@ -108,18 +110,18 @@ img {
 }
 
 .search-dropdown-input-field:nth-child(2) {
-    left: 38.6%;
+    left: 42%;
 }
 
 .search-dropdown-input-field:nth-child(3) {
-    left: 69%;
+    left: 73%;
 }
 
 .search-dropdown-input-field input {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 200;
-    font-size: 2.4vh;
+    font-size: 1.2vw;
     line-height: 24px;
     color: rgba(19, 19, 19, 0.8);
     width: 100%;
@@ -130,7 +132,49 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(350%);
+    transform: translateY(420%);
 }
 
 
+@media screen and (max-width: 960px) {
+    .search-title {
+      font-size: 2.5vh; /* Adjust size */
+    }
+  
+    .input-title {
+      font-size: 1.9vh; /* Adjust size */
+    }
+  
+    .search-input-field input {
+      font-size: 1.9vh; /* Adjust size */
+    }
+  
+    .search-dropdown-input-field {
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5vh;
+        /* transform: translateX(25%); */
+        /* left:5%; */
+    }
+  
+    .search-dropdown-input-field:nth-child(2) {
+        justify-content: center;
+        align-items: center;
+    }
+
+  
+    .search-dropdown-input-field input {
+      font-size: 1.5vh; /* Adjust size */
+    }
+    
+    .search-form {
+        width: 90%; /* Adjust size */
+        left: 5%; /* Adjust position */
+      }
+    
+
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* ... Add more specific styles for this viewport size if necessary ... */
+  }

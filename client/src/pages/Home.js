@@ -7,11 +7,13 @@ import Footer from '../components/Footer';
 function Home () {
     return (
         <>
-            <HeroSection /> 
-            <BodyB/>
-            <div>
+        <div>
+                <HeroSection />
+                <BodyB/>
+        </div>
+        <div>
             <Footer/>
-            </div>
+        </div>
         </>
     )
 }
