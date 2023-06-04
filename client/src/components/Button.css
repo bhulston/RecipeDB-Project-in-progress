@@ -85,6 +85,13 @@
     font-size: 1.4rem;
 }
 
+.btn--wide {
+    padding: 8px 20px;
+    font-size: 1.2rem;
+    width: 300px;
+    
+}
+
 .btn--primary:hover, 
 .btn--search:hover,
 .btn--outline:hover {
@@ -106,11 +113,11 @@
         font-size: 1.8vw;
         text-align: center;
         padding-left: 10px;
-        width: 13vw;
+        /* width: 13vw; */
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
     .btn--body {
         font-size: 1.5vw;
         text-align: left;

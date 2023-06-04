@@ -8,8 +8,6 @@ import Home from './pages/Home';
 import About from './pages/About';
 
 import './App.css';
-import BodyB from './sections/BodyB';
-import Footer from './components/Footer';
 import Log_in from './pages/Log-in';
 import Sign_up from './pages/Sign-up';
 import Search from './pages/Search';
@@ -27,22 +25,13 @@ function App() {
     <UserContext.Provider value = {{user, setUser}}>
       <Router>
         <Navbar/>
-          <Routes>
-            <Route path='/' exact Component=
-              {Home}/>
-            
-            <Route path='/log-in' exact Component=
-              {Log_in}/>
-            
-            <Route path='/sign-up' exact Component=
-              {Sign_up}/>
-
-            <Route path='/search' exact Component=
-              {Search}/>
-
-            <Route path='/recipeGPT' exact Component=
-              {About}/>
-          </Routes>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/log-in' element={<Log_in />} />
+          <Route path='/sign-up' element={<Sign_up />} />
+          <Route path='/search' element={<Search />} />
+          <Route path='/recipeGPT' element={<About />} />
+        </Routes>
       </Router>
     </UserContext.Provider>
   );

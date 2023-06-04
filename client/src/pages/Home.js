@@ -8,8 +8,8 @@ function Home () {
     return (
         <>
         <div>
-                <HeroSection />
-                <BodyB/>
+            <HeroSection />
+            <BodyB/>
         </div>
         <div>
             <Footer/>

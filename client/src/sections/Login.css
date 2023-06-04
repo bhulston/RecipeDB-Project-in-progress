@@ -3,9 +3,13 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 120vh;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
     left: 0;
-    bottom: 5vh;
+    top:0vh;
+    padding-bottom: 60vh;
+    object-fit: contain;
 }
 
 img {
@@ -17,59 +21,54 @@ img {
     z-index: -2;
 }
 
-.main-login-title {
-    position: relative;
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 4vw;
-    text-align: match-parent;
-    color: #000000;
-    left: 45%;
-    top: 15vh;
-}
-
 .login-form {
     position: absolute;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
     border-radius: 2vh;
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left:25%;
+    width: 600px;
+    height: 600px;
+    top: 30%;
     background: #FFFFFF;
-    /* padding:100px; */
     box-sizing: border-box;
+    
+    border-radius: 2vh;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .login-title {
     position: relative;
-    height: 0%;
-    top: 10%;
-    left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    bottom: 25%;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 2vw;
-    line-height: 36px;
-    letter-spacing: -0.015em;
+    font-size: 40px;
+    letter-spacing: -0.020em;
     color: #000000;
 }
 
 .login-input-field {
-    position: absolute;
-    width: 80%;
+    position: relative;
+    display: flex;
+    width: 300px;
     height: 40px;
-    left: 10%;
-    top: 30%;
+
+    bottom: 15%;
     background: #FFFFFF;
-    /* border: 1px solid rgba(0, 0, 0, 0.5); */
+
 }
 
 .login-input-field:nth-child(2) {
-    top: 45%; /* Adjust the value to create desired spacing */
+    transform: translateY(-50%);
 }
+
+
 
 .login-input-field input {
     font-family: 'Montserrat';
@@ -79,20 +78,36 @@ img {
     line-height: 24px;
     color: rgba(0, 0, 0, 0.8);
     width: 100%;
+    
 }
 
 .login-button {
     position: relative;
-    top: 60%;
-    width: 30vh;
-    left: 55%;
-    transform: translateX(-50%);
+    bottom: 10%;
+    
+    /* left: 55%; */
+    /* transform: translateX(-50%); */
 }
+
+.signup-text {
+    position: relative;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    bottom: 30px;
+}
+
+.signup-link {
+    color: #18A0FB;
+    font-weight: lighter;
+  }
+  
+  .signup-link:hover {
+    color: #671d99;
+  }
+  
 
 .signup-button {
     position: relative;
-    top: 65%;
-    width: 30vh;
-    left: 55%;
-    transform: translateX(-50%);
+    bottom: 7%;
 }

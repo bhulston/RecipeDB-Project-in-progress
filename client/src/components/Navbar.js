@@ -33,9 +33,9 @@ function Navbar() {
         {/* Can you explain how the different divs work (nav, a, etc) Is there any real difference between them?? */}
             <nav className = 'navbar'>
                 <div className = 'navbar-container'>
-                    <Link href="/" className="navbar-logo">
+                    <Link to="/" className="navbar-logo">
                         {/* What exactly is Link doing here? */}
-                        HealthyRecipes <i class="fa-solid fa-utensils"></i>
+                        RecipeGPT <i class="fa-solid fa-utensils"></i>
                     </Link>
                     <div className = 'menu-icon' onClick={handleClick}> 
                         <i className = {click ? 'fas fa-times' : 'fas fa-bars'} />

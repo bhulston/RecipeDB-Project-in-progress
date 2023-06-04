@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Login.css';
 import { Button } from '../components/Button';
 import { UserContext } from '../App'; //global user variable
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     const [password, setPassword] = useState('');
@@ -33,7 +33,7 @@ const Login = () => {
             
             if (response.data.verified) {
                 setUser(user);
-                history('/profile');
+                history('/');
             } else {
                 alert('Try again or sign up!');
             };
@@ -50,32 +50,27 @@ const Login = () => {
         <div className="login-container">
             {/* <h1 className="main-login-title">Log In</h1> */}
             <div className="login-form">
-                <h2 className="login-title">Log In to your HealthyRecipes account</h2>
-                <div className="login-input-field">
-                    <input type="password" placeholder="Create Password" 
-                    value = {password} onChange = {e => setPassword(e.target.value)}/>
-                </div>
+                <h2 className="login-title">Log In</h2>
                 <div className="login-input-field">
                     <input type="text" placeholder="Email address" 
                     value = { email } onChange = {e => setEmail(e.target.value)}/>
+                </div>
+                <div className="login-input-field">
+                    <input type="password" placeholder="Create Password" 
+                    value = {password} onChange = {e => setPassword(e.target.value)}/>
                 </div>
                 <div className="login-button">
                     <Button
                         type = 'submit'
                         className='btns'
                         buttonStyle='btn--body'
-                        buttonSize='btn--medium'
+                        buttonSize='btn--wide'
                         onClick={handleLogin}
                     >Log In</Button>
                 </div>
-                <div className="signup-button">
-                    <Button
-                        className='btns'
-                        buttonStyle='btn--body'
-                        buttonSize='btn--medium'
-                        linkTo='/sign-up'
-                    >Sign Up</Button>
-                </div>
+                <h3 className = 'signup-text'>
+                    Don't have an account? <Link to='/sign-up' className = 'signup-link'>Sign up</Link>
+                </h3>
             </div>
         </div>
       </form>
