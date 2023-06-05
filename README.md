@@ -10,7 +10,7 @@ The motivation behind this project is two-fold:
 ### Personal Goals:
 - **Full-stack Programming Practice**: This project provided a great opportunity to delve into full-stack development, and get hands-on experience working with databases, APIs, front-end, and back-end technologies.
 - **Building a NoSQL Database**: The project allowed the exploration and implementation of a NoSQL database (MongoDB) and utilizing it through REST APIs.
-- **Development of a Language Model for Recipes**: Leveraged a large language model to build a "ChatGPT"
+- **Development of a Language Model for Custom Data**: Leveraged a large language model to build a "ChatGPT" trained on our MongoDB database that users can interface with
 
 ### Project Goals:
 - **Implement a Full MERN Stack**: This project is a practical application of the MERN (MongoDB, Express, React, Node.js) stack. It allowed the learning and practicing of Javascript, HTML, CSS basics.
