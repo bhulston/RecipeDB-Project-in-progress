@@ -16,6 +16,29 @@ const BodyB = () => {
     }
   }, [user]);
 
+  useEffect(() => {
+    const wrappers = document.querySelectorAll('.wrapper');
+
+    function animateElements() {
+      wrappers.forEach((wrapper) => {
+        const rect = wrapper.getBoundingClientRect();
+        const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+        if (isVisible) {
+          wrapper.classList.add('animation');
+        } else {
+          wrapper.classList.remove('animation');
+        }
+      });
+    }
+
+    animateElements();
+    window.addEventListener('scroll', animateElements);
+
+    return () => {
+      window.removeEventListener('scroll', animateElements);
+    };
+  }, []);
+
   if (isLoggedIn) {
     buttonLink = '/profile'
     buttonText = 'Profile'
@@ -24,15 +47,19 @@ const BodyB = () => {
     buttonText = 'Log in'
   }
 
+  
+
 
 
  
   return (
     <div className="bodyB">
-      <h1 className="header">Getting Started</h1>
+      <div className="wrapper">
+        <h1 className="header">Getting Started</h1>
+      </div>
         <div className="grid">
         {/* First grid spot */}    
-          <div>
+          <div className="wrapper">
             <h4 className="sub-header">Make a profile & save recipes</h4>
                 <p className="paragraph">
                     We won't use your email or information for anything other than storing your recipes for later! Sign up easily and access your recipes at any time.
@@ -41,7 +68,7 @@ const BodyB = () => {
           </div>
         
         {/* Second grid spot */}  
-          <div>
+          <div className="wrapper">
             <h4 className="sub-header">Recipe GPT</h4>
                 <p className="paragraph">
                 Talk with our chatbot that helps you find the perfect recipe.
@@ -52,7 +79,7 @@ const BodyB = () => {
           </div>
 
         {/* Third grid spot */}  
-          <div>
+          <div className="wrapper">
             <h4 className="sub-header">Search for recipes manually</h4>
                 <p className="paragraph">
                 Use combinations of ingredients and nutritional information to find the perfect recipe for your breakfast/lunch/dinner.
@@ -63,7 +90,7 @@ const BodyB = () => {
           </div>
 
         {/* Fourth grid spot */}  
-          <div>
+          <div className="wrapper">
             <h4 className="sub-header">Open sourced project</h4>
                 <p className="paragraph">
                 We've open sourced all our code for the website, LLM, and other models so please take a look and reach out if you have any questions!

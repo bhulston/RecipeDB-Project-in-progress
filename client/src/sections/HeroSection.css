@@ -16,6 +16,15 @@ video {
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+
+    transform: translateY(100px);
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+  }
+
+  .hero-container.appear {
+    opacity: 1;
+    transform: translateY(0);
   }
   
   .hero-container > h1 {

@@ -1,3 +1,14 @@
+@keyframes float-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .bodyB {
     position: relative;
     width: 100%;
@@ -68,6 +79,11 @@
     text-align: center;
     margin-top: 10px;
     cursor: pointer;
+  }
+
+  .animation {
+    
+    animation: float-up 1s ease-in-out;
   }
   
   @media screen and (max-width: 960px) {

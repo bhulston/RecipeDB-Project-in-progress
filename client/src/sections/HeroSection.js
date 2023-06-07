@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../App.css';
 import './HeroSection.css';
 import { Button } from '../components/Button';
 
 function HeroSection() {
+  useEffect(() => {
+    const container = document.querySelector('.hero-container');
+    container.classList.add('appear');
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
+   <> 
+    <video src='/media/video_1.mp4' autoPlay loop muted />
     <div className='hero-container'>
-      <video src='/media/video_1.mp4' autoPlay loop muted />
+      
       <h1>Find Recipes From Around The World</h1>
       <p>
         Search by your own criteria, or use our own chatbot to find your perfect, healthy recipe today!
@@ -31,6 +39,7 @@ function HeroSection() {
         </Button>
       </div>
     </div>
+    </>
   );
 }
 

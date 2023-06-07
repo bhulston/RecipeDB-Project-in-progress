@@ -1,4 +1,4 @@
-import React, {useState, useContext} from 'react';
+import React, {useState, useContext, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import './Button.css';
@@ -23,6 +23,13 @@ function Navbar() {
         setButton(true);
     }
   };
+
+  useEffect(() => {
+    const container = document.querySelector('.navbar-container');
+    container.classList.add('appear');
+    window.scrollTo(0, 0);
+  }, []);
+    
 
   window.addEventListener('resize', showButton);
 

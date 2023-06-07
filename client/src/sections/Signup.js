@@ -79,7 +79,7 @@ const Signup = () => {
                     >Sign Up</Button>
                 </div>
                 <h3 className = 'login-text'>
-                    Don't have an account? <Link to='/log-in' className = 'signup-link'>Sign up</Link>
+                    Already have an account? <Link to='/log-in' className = 'signup-link'>Log In</Link>
                 </h3>
             </div>
         </div>
