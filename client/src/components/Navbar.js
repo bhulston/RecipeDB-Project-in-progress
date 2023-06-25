@@ -27,7 +27,6 @@ function Navbar() {
   useEffect(() => {
     const container = document.querySelector('.navbar-container');
     container.classList.add('appear');
-    window.scrollTo(0, 0);
   }, []);
     
 
