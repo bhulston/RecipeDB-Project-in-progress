@@ -11,6 +11,7 @@ Todo:
 - [X] Account creation and recipe saving
 - [X] LLM finetuned
 - [ ] LLM APIs setup
+- [ ] Frontend for LLm interaction built
 
 
 ## 1. Goal
