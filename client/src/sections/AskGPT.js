@@ -6,40 +6,25 @@ import axios from 'axios';
 
 const SearchRecipe = ({setRecipes}) => {
 
-    // Search componenets
-    const [pIsOpen, setPIsOpen] = useState(false);
-    const [cIsOpen, setCIsOpen] = useState(false);
-    const [fIsOpen, setFIsOpen] = useState(false);
-
     // string search queries
-    const [searchQuery1, setSearchQuery1] = useState('');
-    const [searchQuery2, setSearchQuery2] = useState('');
-    // protein ranges
-    const [pRangeMin, setPRangeMin] = useState(0);
-    const [pRangeMax, setPRangeMax] = useState(999);
-    // cal ranges
-    const [cRangeMin, setCRangeMin] = useState(0);
-    const [cRangeMax, setCRangeMax] = useState(999);
-    // fat ranges
-    const [fRangeMin, setFRangeMin] = useState(0);
-    const [fRangeMax, setFRangeMax] = useState(999);
+    const [textQuery1, setTextQuery1] = useState('');
+    const [textQuery2, setTextQuery2] = useState('');
     
-    const params = {
-        "searchQuery1": searchQuery1,
-        "searchQuery2": searchQuery2,
-        "pRangeMin": pRangeMin,
-        "pRangeMax": pRangeMax,
-        "cRangeMin": cRangeMin,
-        "cRangeMax": cRangeMax,
-        "fRangeMin": fRangeMin,
-        "fRangeMax": fRangeMax
+    const request = {
+        "params": {
+            "recipes_csv": "",
+            "text": textQuery1,
+            "text_1": textQuery2 },
+        "project": "a4a508823d9d-42e9-ac76-ad1c2889de82"
     };
-    
-    const searchSubmit = async (event) => {
+
+
+    const GPTSubmit = async (event) => {
         event.preventDefault(); //stop default action
+        const relevanceApi = 'https://api-bcbe5a.stack.tryrelevance.com/latest/studios/91c6c3d9-eaeb-4c7b-aeb8-ec2c8c2d2231/trigger_limited';
 
         try {
-            const response = await axios.get('http://localhost:5000/recipes/search', {params});
+            const response = await axios.post(relevanceApi, {params});
             setRecipes(response.data);
             if (response) {
                 console.log('Response Received');
