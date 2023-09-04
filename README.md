@@ -3,6 +3,16 @@
 This project is a comprehensive, interactive, and intuitive recipe finder that leverages a combination of cutting-edge technologies to provide users with personalized access to a database of over 100,000 recipes from 50+ cuisines.
 Find the best recipes for you and eat healthy food from around the world!
 
+Todo:
+- [X] Webscraping
+- [X] MongoDB Database
+- [X] Web Application infrastructure and landing page
+- [X] Search function for website
+- [X] Account creation and recipe saving
+- [X] LLM finetuned
+- [ ] LLM APIs setup
+
+
 ## 1. Goal
 
 The motivation behind this project is two-fold:
