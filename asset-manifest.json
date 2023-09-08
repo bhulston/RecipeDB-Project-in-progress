@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/RecipeDB-Project-in-progress/static/css/main.21f0a515.css",
+    "main.js": "/RecipeDB-Project-in-progress/static/js/main.0fb36599.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/RecipeDB-Project-in-progress/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/RecipeDB-Project-in-progress/index.html",
+    "main.21f0a515.css.map": "/RecipeDB-Project-in-progress/static/css/main.21f0a515.css.map",
+    "main.0fb36599.js.map": "/RecipeDB-Project-in-progress/static/js/main.0fb36599.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/RecipeDB-Project-in-progress/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.21f0a515.css",
+    "static/js/main.0fb36599.js"
+  ]
+}
