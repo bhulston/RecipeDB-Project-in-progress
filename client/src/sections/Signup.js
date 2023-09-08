@@ -5,6 +5,7 @@ import './Signup.css';
 import { Button } from '../components/Button';
 import { UserContext } from '../App';
 import { Link, useNavigate } from 'react-router-dom';
+import Image from '../media/img_2.jpg'
 
 const Signup = () => {
     const [password, setPassword] = useState('');
@@ -49,7 +50,7 @@ const Signup = () => {
 
     return (
       <>
-        <img src = '/media/img_2.jpg'/> 
+        <img src = {Image}/> 
         <div className="signup-container">
             {/* <h1 className="main-signup-title">Sign Up</h1> */}
             <div className="signup-form">

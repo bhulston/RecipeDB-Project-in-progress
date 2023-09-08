@@ -4,6 +4,7 @@ import './Login.css';
 import { Button } from '../components/Button';
 import { UserContext } from '../App'; //global user variable
 import { Link, useNavigate } from 'react-router-dom';
+import Image from '../media/img_2.jpg'
 
 const Login = () => {
     const [password, setPassword] = useState('');
@@ -46,7 +47,7 @@ const Login = () => {
 
     return (
       <form onSubmit = {handleLogin}>  
-      <img src = '/media/img_2.jpg'/>  
+      <img src = {Image}/>  
         <div className="login-container">
             {/* <h1 className="main-login-title">Log In</h1> */}
             <div className="login-form">

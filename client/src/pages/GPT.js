@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import '../App.css';
-import SearchRecipe from '../sections/SearchRecipe';
+import AskGPT from '../sections/AskGPT'
 import RecipeDisplay from '../sections/RecipeDisplay';
 import Footer from '../components/Footer';
 
@@ -17,7 +17,7 @@ function Search () {
 
     return (
         <>
-            <SearchRecipe setRecipes={setRecipes}/> 
+            <AskGPT setRecipes={setRecipes}/> 
             <RecipeDisplay recipes = {recipes}/>
             <Footer/>
         </>

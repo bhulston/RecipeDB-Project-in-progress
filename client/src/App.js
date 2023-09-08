@@ -11,6 +11,7 @@ import './App.css';
 import Log_in from './pages/Log-in';
 import Sign_up from './pages/Sign-up';
 import Search from './pages/Search';
+import GPT from './pages/GPT'
 
 export const UserContext = React.createContext();
 
@@ -30,7 +31,7 @@ function App() {
           <Route path='/log-in' element={<Log_in />} />
           <Route path='/sign-up' element={<Sign_up />} />
           <Route path='/search' element={<Search />} />
-          <Route path='/recipeGPT' element={<About />} />
+          <Route path='/recipeGPT' element={<GPT />} />
         </Routes>
       </Router>
     </UserContext.Provider>

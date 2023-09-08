@@ -8,7 +8,7 @@ const BodyB = () => {
   const { user } = useContext(UserContext);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   let [buttonText, setButtonText] = useState('Sign In');
-  let [buttonLink, setButtonLink] = useState('/sign-in')
+  let [buttonLink, setButtonLink] = useState('/log-in')
 
   useEffect(() => {
     if (user) {
@@ -43,7 +43,7 @@ const BodyB = () => {
     buttonLink = '/profile'
     buttonText = 'Profile'
   } else {
-    buttonLink = '/sign-in'
+    buttonLink = '/log-in'
     buttonText = 'Log in'
   }
 

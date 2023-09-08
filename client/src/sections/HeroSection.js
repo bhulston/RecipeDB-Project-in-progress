@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../App.css';
 import './HeroSection.css';
 import { Button } from '../components/Button';
+import Video from '../media/video_1.mp4'
 
 function HeroSection() {
   useEffect(() => {
@@ -12,7 +13,7 @@ function HeroSection() {
   
   return (
    <> 
-    <video src='/media/video_1.mp4' autoPlay loop muted />
+    <video src={Video} autoPlay loop muted />
     <div className='hero-container'>
       
       <h1>Find Recipes From Around The World</h1>
